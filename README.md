@@ -1,0 +1,2 @@
+# BuildSiv3D_onServer
+OpenSiv3DをUbuntuServer22.04でビルドしてインストールする
