@@ -1,8 +1,10 @@
 # update package
 sudo apt update && sudo apt upgrade -y
-sudo apt install ninja-build libasound2-dev libavcodec-dev libavformat-dev libavutil-dev libboost-dev libcurl4-openssl-dev libgtk-3-dev libgif-dev libglu1-mesa-dev libharfbuzz-dev libmpg123-dev libopencv-dev libopus-dev libopusfile-dev libsoundtouch-dev libswresample-dev libtiff-dev libturbojpeg0-dev libvorbis-dev libwebp-dev libxft-dev uuid-dev xorg-dev gcc-9 g++-9 cmake -y
+sudo apt install ninja-build libasound2-dev libavcodec-dev libavformat-dev libavutil-dev libboost-dev libcurl4-openssl-dev libgtk-3-dev libgif-dev libglu1-mesa-dev libharfbuzz-dev libmpg123-dev libopencv-dev libopus-dev libopusfile-dev libsoundtouch-dev libswresample-dev libtiff-dev libturbojpeg0-dev libvorbis-dev libwebp-dev libxft-dev uuid-dev xorg-dev gcc g++ gcc-9 g++-9 cmake -y
 
 # install gcc version 9 (not 11)
+sudo rm /usr/bin/gcc
+sudo rm /usr/bin/g++
 sudo ln -s /usr/bin/gcc-9 /usr/bin/gcc
 sudo ln -s /usr/bin/g++-9 /usr/bin/g++
 
